@@ -1,0 +1,351 @@
+/*
+Colours
+    default text color: #444349 (grey)
+    alternate text color: #d2ba87 (gold)
+    dark background: hsla(100,0%,0%,.6);
+    link color: #bd806e
+    link color on hover: #eda087
+
+@Media: 480px, 768px, 992px és 1200px
+
+Images
+    background pattern: https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png
+    cover photo: https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg
+    ceremony location: https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-ceremony.png
+    photoshoot location: https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-photoshoot.png
+    party location: https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-party.png
+    gifts: https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-gifts.png
+    favicon: https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-favicon.png
+  
+Fonts
+    Great Vibes
+    Libre Baskerville
+    Muli
+*/
+
+/*===GENERAL===*/
+
+body {
+  box-sizing: border-box;
+  background-image: url(https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png);
+  max-width: 1100px;
+  margin-left: 0;
+  margin-right: 0;
+  margin: auto;
+}
+
+.ceremony img, .photo-shoot img, .party img, .gifts img {
+  width: 6rem;
+}
+
+sup {
+  vertical-align: super;
+  font-size: .6rem;
+}
+
+strong {
+  font-weight: bold;
+}
+
+/*===TYPOGRAPHY===*/
+
+h1, h2, h3, p, ul {
+  color: #444349;
+}
+
+h1 {
+  font-size: 3.2rem;
+  font-family: 'Great Vibes';
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-family: 'Libre Baskerville';
+  line-height: 2rem;
+}
+
+h3 {
+  font-size: 1.0rem;
+  font-family: 'Libre Baskerville';
+  font-weight: bold;
+}
+
+p, ul {
+  font-size: 1.2rem;
+  font-family: 'Muli';
+}
+
+a, em {
+  font-size: 1rem;
+  color: #eda087;
+  text-decoration: none;
+  transition: .3s ease-in-out;
+}
+
+a:hover {
+  color: #bd806e;
+}
+
+header h1 {
+  color: #d2ba87;
+}
+
+header h2 {
+  color: #fff;
+}
+
+/*===HEADER===*/
+
+header {
+  background: url("https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg") no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: 78%;
+}
+
+header div {
+  width: 100%;
+  height: 11rem;
+  background: rgba(0,0,0,0.4);
+  text-align: center;
+  margin-left: 0;
+  margin-right: 0;
+  margin: auto;
+  position: relative;
+  top: 39vh;
+  padding-top: 1rem;
+}
+
+header h1 {
+  width: 100%;
+  margin: .2rem auto .5rem;
+  padding-top: 1rem;
+}
+
+.tagline::after {
+  display: block;
+  content: "";
+  background: #fff;
+  height: 1px;
+  width: 190px;
+  margin: .5rem auto;
+}
+
+.date::before, .date::after {
+  display: inline-block;
+  content:"";
+  background: #fff;
+  height: 1px;
+  width: 15px;
+  margin: 0 .5rem .5rem;
+}
+
+/*===LOCATIONS===*/
+
+.locations {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.locations h1 {
+  margin: 1.5rem;
+}
+
+.locations h2 {
+  margin: 1rem;
+}
+
+.locations p {
+  margin-bottom: 1.1rem;
+}
+
+.ceremony::after, .photo-shoot::after, .party::after {
+  display: block;
+  content: "";
+  height: 1px;
+  width: 7rem;
+  background-color: #333;
+  margin: 1rem auto;
+}
+
+/*===PROGRAM===*/
+
+.program {
+  width: 100%;
+  height: auto;
+  padding: 2rem 0;
+  background: hsla(100,0%,0%,.6);
+}
+
+.program h1, .program p {
+  text-align: center;
+  color: #d2ba87;
+}
+
+.program p {
+  margin: 1rem;
+  font-style: italic;
+}
+
+.program ul {
+  padding-left: 1rem;
+  color: #d2ba87;
+}
+
+/*===GIFTS===*/
+
+.gifts {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.gifts p, gifts img {
+  margin: 1rem 0;
+}
+
+/*===Q&A===*/
+
+.questions {
+  background: hsla(100,0%,0%,.6);
+  padding: 2rem 1rem;
+  text-align: center;
+  line-height: 1.4rem;
+}
+
+.questions h1, .questions h2, .questions h3, .questions p {
+  color: #d2ba87;
+}
+
+.questions h1 {
+  margin-bottom: .5rem
+}
+
+.questions h2, .questions h3 {
+  padding-top: 1rem;
+}
+
+.travel::after, .food::after, .other::after {
+  display: block;
+  content: "";
+  height: 1px;
+  width: 7rem;
+  background-color: #d2ba87;
+  margin: 1.4rem auto 1rem;
+}
+
+/*===CONTACT===*/
+
+.contact {
+  padding: 2rem;
+  text-align: center;
+}
+
+.contact p {
+  margin: .5rem 0;
+}
+
+.contact ul li {
+  margin-bottom: .5rem;
+}
+
+/*===FOOTER===*/
+
+footer {
+  width: 100%;
+  display: table;
+}
+
+.footer {
+  height: 3rem;
+  color: #d2ba87;
+  background: hsla(100,0%,0%,.6);
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 1rem;
+}
+
+.footer small {
+  color: #fff;
+}
+
+.footer strong {
+  color: red;
+  font-size: 1.2rem;
+}
+
+.footer div {
+  margin-top: .5rem;
+}
+
+.footer div a {
+  margin: 1rem;
+}
+
+@media (min-width: 768px) {
+
+  .header {
+    width: 55%;
+  }
+
+  .program {
+    clear: left;
+  }
+  .ceremony, .photo-shoot, .party {
+    width: 33%;
+    float: left;
+    margin-bottom: 1.5rem;
+  }
+  .ceremony p, .photo-shoot p, .party p {  
+  margin-bottom: 0;
+  }
+  .program ul {
+    margin-left: calc(50% - 140px);
+  }
+
+  .questions {
+    height: auto;
+    overflow: hidden;
+  }
+  .questions h1 {
+    letter-spacing: .05em;
+  }
+  .travel, .food, .other {
+    width: 31%;
+    float: left;
+    padding: .5rem;
+  }
+  .travel span, .food span, .other span {
+    border-bottom: none;
+  }
+  .travel h2, .food h2, .other h2 {
+    padding-top: 0;
+    height: 4rem;
+  }
+  .photo-shoot  {
+  border-left: 1px solid #333;
+  border-right: 1px solid #333;
+
+  }
+  .food {
+  border-left: 1px solid #d2ba87;
+  border-right: 1px solid #d2ba87;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  }
+  .questions h1 {
+  padding: 1rem 0;
+  }
+  .contact {
+    clear: left;
+  }
+  .ceremony::after, .photo-shoot::after, .party::after, .travel::after, .food::after, .other::after {
+    display: none;
+  }
+}
+
+@media (max-width: 350px) {
+  .header {
+    height: 13rem;
+  }
+}
